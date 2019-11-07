@@ -85,7 +85,6 @@ def mix_up(a, b):
 # Provided simple test() function used in main() to print
 # what each function returns vs. what it's supposed to return.
 def test(got, expected):
-    """Your code goes here.  Edit this docstring."""
     if got == expected:
         prefix = ' OK '
     else:
