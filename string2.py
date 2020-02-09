@@ -41,7 +41,10 @@ def not_bad(s):
     index_bad = s.find("bad")
     index_not = s.find("not")
     if index_bad >= index_not:
-        new_string = s.replace(s[index_not:-1], "good")
+        if s.endswith("!") | s.endswith("."):
+            new_string = s.replace(new_string[index_not:-1], "good")
+        else:
+            new_string = s.replace(new_string[index_not:], "good")
     return new_string
 
 
